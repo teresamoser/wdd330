@@ -1,7 +1,9 @@
-var myArr = [];
+const 
 
 function showCard() {
-    var temp = document.getElementsByTagName("template")[0];
-    var clon = temp.content.cloneNode (true);
-    document.body.appendChild(clon);
+    const showCardButton = document.getElementsByTagName("template")[0];
+    
+
+    
+
 }
