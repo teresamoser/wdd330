@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Teresa Moser" description="Show how to use the template element in html">
+
+
+
     <title>prophet-card</title>
 </head>
-<body>
-    <h1>The Template Element</h1>
-    <p>Click the button below to display the hidden prophet card.<br>
+    <body>
+        <h1>The Template Element</h1>
+        <p>Click the button below to display the hidden prophet card.<br>
         Each time you click the button it will be a new prophet.
-    </p>
-    <button onclick="showCard">Show Prophet Card</button>
-    <template id="prophet-card">
-        <section class="card">
-          <h2 id="fullname"></h2>
-          <p id="birthdate"></p>
-          <p id="birthplace"></p>
-          <img class="profile" src="" alt="" loading="lazy" width="200" height="300">
-        </section>
-      </template>
+        </p>
+        
+        <button onclick="showCard">Show Prophet Card</button>
+        <template id="prophet-card">
+            <section class="card">
+            <h2 id="fullname"></h2>
+            <p id="birthdate"></p>
+            <p id="birthplace"></p>
+            <img class="profile" src="" alt="" loading="lazy" width="200" height="300">
+            </section>
+        </template>
     
-</body>
+      <script href="prophetCard/prophets.js"></script>
+
+    </body>
 </html>
