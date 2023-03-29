@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD330 - Final Project - Teresa Moser</title>
+        <meta name="description" content="WDD330 Final Project to demonstrate what I have learned in this class">
+        <meta name="author" content="Teresa Moser">
+        
+        <!-- Stylesheets for css files -->
+        <link rel="stylesheet" href="../FinalProject/Final-Project.css">
+        <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+        <!-- Favicon -->
+        <link rel="icon" href="images/PurpleSmile.jpg">
+    </head>
+    <body> 
+        <header>
+            <h1>WDD 330: Final Project Solar System</h1>
+        </header>
+        <div class="hero">
+            <picture>
+                <source srcset="../FinalProject/images/Stars2.webp" width="600">
+                <img src="../FinalProject/images/Stars2.webp" loading="lazy" width="1000" alt="hero image">
+            </picture>             
+        </div>
+        <main>
+                <section class="card1">
+                    <h2>Planet of the Day</h2> 
+                </section>
+
+                <section class="card2">
+                    <h2>Project</h2>
+                       
+                </section> 
+
+                <section class="card3">
+                    <h2>Information</h2>
+                    <h3>Current Weather</h3>
+                    <div class="card">
+                        <p id="town"></p>
+                        <img id="graphic" src="http://openweathermap.org/img/wn/10d@2x.png" alt="image of weather">
+                        <p id="description"></p>
+                        <p id="temperature"></p>
+                    </div>
+                    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                </section>     
+        </main>
+
+<!-- Map -->
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11543.114169206518!2d-111.9151805!3d43.6735754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53546c26bac0d859%3A0xbf887dcc84af9018!2sRigby%2C%20ID%2083442!5e0!3m2!1sen!2sus!4v1674354246522!5m2!1sen!2sus" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <footer >
+            &copy; <a class="highlight" id="newDate"></a> Teresa Moser <br>
+            <a class="highlight" id="lastModified"> </a>
+        </footer> 
+
+<!-- Java Script links -->
+        <script src="./Final-Project.js"></script>
+    </body>
+</html> 
