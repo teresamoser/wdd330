@@ -14,27 +14,22 @@
         <link rel="icon" href="images/PurpleSmile.jpg">
     </head>
     <body> 
-        <header>
-            <h1>WDD 330: Final Project Solar System</h1>
-        </header>
-        <div class="hero">
-            <picture>
-                <source srcset="../FinalProject/images/Stars2.webp" width="600">
-                <img src="../FinalProject/images/Stars2.webp" loading="lazy" width="1000" alt="hero image">
-            </picture>             
-        </div>
         <main>
+            <div>
+                <img id="bgimage" src="../FinalProject/images/Stars2.webp" loading="lazy" width="1000" alt="hero image">
+                <h1 id="title">WDD 330: Final Project Solar System</h1>
+                
                 <section class="card1">
                     <h2>Planet of the Day</h2> 
                 </section>
 
                 <section class="card2">
-                    <h2>Project</h2>
+                    <h2>Moons/Satellites</h2>
                        
                 </section> 
 
                 <section class="card3">
-                    <h2>Information</h2>
+                    <h2>Constellations</h2>
                     <h3>Current Weather</h3>
                     <div class="card">
                         <p id="town"></p>
@@ -42,8 +37,12 @@
                         <p id="description"></p>
                         <p id="temperature"></p>
                     </div>
+
+                    
                     <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-                </section>     
+                </section>
+
+            </div>     
         </main>
 
 <!-- Map -->

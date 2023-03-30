@@ -1,52 +1,50 @@
-
 * {
     box-sizing: border-box;
     }
-
-body{
-    background-color: black;
-    background-image: url ("wdd330/FinalProject/images/Stars2.webp");
-    background-position: center;
-    background-repeat: no-repeat;
+  body {
+    margin: 0;
+    height: 100%;
+    background: url ("wdd330/FinalProject/images/Stars2.webp")no-repeat center center;
     background-size: cover;
-    position: relative;
     font-family: 'Anonymous Pro';
-    min-width: 400px;
     }
-  h1 {
+  #title {
     color:white;
     text-align: center;
     padding: 1rem;
+    position: relative; 
     }
    
-/* Hero Picture label code */ 
-  picture {
-    max-width: 670px;
-    margin: 0 auto;
-    }   
-  .hero {
-    margin: 10px auto;
-    position: relative;
-    border: 1px solid rgba(0,0,0,.1);
-    height: 300px;
-    }   
-  .hero img {
+/* Background image code */  
+  #bgimage {
+    min-height: 100%;
+    min-width: 1024px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }   
-/* Picture label code ends */
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) { 
+    #bgimage {
+      left: 50%;
+      margin-left: -512px;  
+    }
+  }
+/* Background image code ends */
     
 /* Main sections */
   section {
     color: black;;
     padding: 1rem;
+    text-align: center;
     border-color:rgb(13, 12, 12);
     border-style: solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
     gap: 1.5rem;
     background:white;
+    position: relative; 
     }
   h2 {
     background:rgb(4, 4, 4);
@@ -59,6 +57,7 @@ body{
     }
   .card2 {
     text-align: center;
+    gap: 1.5rem;
     }
   .card3 {
     color: black;;
@@ -72,22 +71,29 @@ body{
     background:rgb(240, 239, 238);
     grid-row: 2;
     font-size: large;
+    position: relative;
     }
  
     /* WEATHER APP*/
- .card{  
-    color: rgb(11, 11, 11);
+ .card {  
+    color: rgb(250, 248, 248);
     padding: 1rem;
     border-color:rgb(10, 10, 10);
     border-style: solid;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
-    background:rgb(80, 168, 231);
+    background:rgb(38, 82, 114);
     text-align: center;
     font-size: x-large;
-    width: 400px;
+    width: 300px;
     height: 300px;
+    position: relative;
     }
+  #graphic {
+    margin: 0 0 1rem 1rem;
+    border: 1px solid #fbf7f7;
+    box-shadow: 0 0 15px #070707;
+    } 
     /* END WEATHER APP */
 /* end Main section */
   
@@ -100,7 +106,7 @@ body{
     font-weight: 700;
     }
   .visits {
-    color: rgb(37, 17, 163);
+    color: rgb(36, 72, 172);
     font-weight: bolder;
     font-size: larger;
     }
@@ -112,14 +118,15 @@ body{
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
-    width: auto;
-    height: 450px;
+    min-width: 350px;
+    height: 350px;
     padding: 1rem;
     border-style: solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
     gap: 1.5rem;
     background:rgb(236, 225, 195);
+    grid-column: 1/3;
     }
   .googlemap iframe {
     left: 0;
@@ -132,15 +139,15 @@ body{
    
   footer {
     color: white;
-    background:rgb(6, 6, 6);
     padding: 1rem;
     text-align: center;
-    grid-column: 1/3;
+    position: relative;
+    font-family: 'Anonymous Pro';
+    font-size: large;
     }
 
-
 /* CSS LARGE SIZE */
-@media only screen and (min-width: 760px){
+@media only screen and (max-width: 1024px){
   header {
       grid-template-columns: auto auto;
   }   
@@ -153,18 +160,18 @@ body{
   main h1 {
       grid-column: 1 / span 2;
   }
+  .card2, .card3{
+    grid-column: 1 / span2;
+  }
   .card1 {
       grid-row: 2 / span 2;
       text-align: left;
-  } 
-  /* .card1 h2{
+  }
+  .card2, .card3, .card1 h2{
       text-align: center;
   }
-  .card2{
-      text-align: center;
+  .googlemap{
+      max-width: 1024px;
   }
-  .card3{
-      text-align: center;
-  } */
 }
 
