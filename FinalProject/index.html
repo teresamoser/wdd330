@@ -8,7 +8,8 @@
         <meta name="author" content="Teresa Moser">
         
         <!-- Stylesheets for css files -->
-        <link rel="stylesheet" href="../FinalProject/Final-Project.css">
+        <link rel="stylesheet" href="styles/Final-Project.css">
+        <link rel="stylesheet" href="styles/Final-Project-large.css">
         <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
         <!-- Favicon -->
         <link rel="icon" href="images/PurpleSmile.jpg">
@@ -23,12 +24,20 @@
                 
                 <section class="card1">
                     <h2>Planets</h2> 
-                    <select name="planet">
-                        <option value=" ">Please Select &#9662;</option>
-                        <option value="planetName">Earth</option>
-                        <option value="planetName">Mars</option>
-                        <option value="planetName">Jupiter</option>
-                    </select>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                          <option value="0">Select planet:</option>
+                          <option value="1">Mercury</option>
+                          <option value="2">Venus</option>
+                          <option value="3">Earth</option>
+                          <option value="4">Mars</option>
+                          <option value="5">Jupiter</option>
+                          <option value="6">Saturn</option>
+                          <option value="7">Uranus</option>
+                          <option value="8">Neptune</option>
+                          <option value="9">Pluto</option>
+                        </select>
+                      </div>
                 </section>
 
                 <section class="card2">
