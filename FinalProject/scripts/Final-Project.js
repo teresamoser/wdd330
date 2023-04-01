@@ -24,7 +24,6 @@ fetch(myURL)
     }
 //END OF WEATHER APP
 
-
 // GETDATES JS 
 const d = new Date();
 let year = d.getFullYear();

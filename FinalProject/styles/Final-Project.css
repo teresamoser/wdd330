@@ -82,7 +82,7 @@
   display: none; /*hide original SELECT element: */
 }
 .select-selected {
-  background-color: rgb(27, 90, 152);
+  background-color: rgb(38, 82, 114);
 }
 /* Style the arrow inside the select element: */
 .select-selected:after {
@@ -111,7 +111,7 @@
 /* Style items (options): */
 .select-items {
   position: absolute;
-  background-color: rgb(27, 90, 152);
+  background-color: rgb(38, 82, 114);
   top: 100%;
   left: 0;
   right: 0;
@@ -162,7 +162,7 @@
     }
   .visits {
     color: rgb(36, 72, 172);
-    font-weight: bolder;
+    font-weight: 800;
     font-size: large;
     }
   /* END VISITS PER PAGE */
