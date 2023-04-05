@@ -17,44 +17,31 @@
     <body> 
         <main>
             <div>
-                <img id="bgimage" src="../FinalProject/images/Stars2.webp" loading="lazy" width="1000" alt="hero image">
+                <img id="bgimage" src="../FinalProject/images/Stars2.webp" loading="lazy" width="1000" alt="Space bgimage">
                 <header>
                     <h1 id="title">WDD 330: Final Project Solar System</h1>
                 </header>
-                
                 <section class="card1">
-                    <h2>Planets</h2> 
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                          <option value="0">Select planet:</option>
-                          <option value="1">Mercury</option>
-                          <option value="2">Venus</option>
-                          <option value="3">Earth</option>
-                          <option value="4">Mars</option>
-                          <option value="5">Jupiter</option>
-                          <option value="6">Saturn</option>
-                          <option value="7">Uranus</option>
-                          <option value="8">Neptune</option>
-                          <option value="9">Pluto</option>
-                        </select>
-                      </div>
-                      <div class="card">
-                          <p id="name">Planet: </p>
-                          <img id="planet" src="./images/Earth.jpeg" width="100"  alt="image of planet">
-                          <p id="mass">Mass:  </p>
-                          <p id="radius">Radius:  </p>
-                          <p id="tempurature">Temperature:  </p>
-                      </div>
-                </section>
-
-                <section class="card2">
-                    <h2>Moons/Satellites</h2>       
-                </section> 
-
-                <section class="card3">
-                    <h2>Constellations</h2>
-                </section>
-
+                <div id="header-container" class="ui inverted segment">
+                    <div class="ui inverted secondary menu">
+                       <h1 id="header-text">Planets in our Solar System</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="card2">
+                <div id="container">
+                    <div id="planet-container" class="ui cards">
+                            <!-- will hold the cards for all the planets -->
+                            <button id="generate-planet" class="ui secondary button">Generate Planet</button>
+                    </div>
+                </div>
+            </section>
+            <section class="card3">
+                <div id="delete-container">
+                    <button id="delete-btn" class="ui red button">Delete</button>
+                </div>
+            </section>
+            
                 <section class="card4">
                     <h2>Current Weather</h2>
                     <div class="card">
@@ -70,11 +57,11 @@
         </main>
 
 <!-- Map -->
-        <div class="googlemap">
+        <!-- <div class="googlemap">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11543.114169206518!2d-111.9151805!3d43.6735754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53546c26bac0d859%3A0xbf887dcc84af9018!2sRigby%2C%20ID%2083442!5e0!3m2!1sen!2sus!4v1674354246522!5m2!1sen!2sus" 
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        </div>
+        </div> -->
 
         <footer >
             &copy; <a class="highlight" id="newDate"></a> Teresa Moser <br>

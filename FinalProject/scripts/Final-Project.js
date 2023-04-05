@@ -1,5 +1,5 @@
 //WEATHER APP
-//select HTML elements in the document  
+select HTML elements in the document  
 const myTown = document.querySelector('#town')
 const myGraphic = document.querySelector('#graphic')
 const myDescription = document.querySelector('#description')
@@ -35,20 +35,20 @@ document.getElementById("lastModified").innerHTML = date;
 
 //NUMBER OF PAGE VISTS JS
     // initialize display elements
-const todayDisplay = document.querySelector(".today");
-const visitsDisplay = document.querySelector(".visits");
+// const todayDisplay = document.querySelector(".today");
+// const visitsDisplay = document.querySelector(".visits");
 
-    // get the stored value in localStorage
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+//     // get the stored value in localStorage
+// let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
-    // determine if this is the first visit or display the number of visits.
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit!`;
-}
-    // increment the number of visits.
-numVisits++;
-    // store the new number of visits value
-localStorage.setItem("visits-ls", numVisits);
+//     // determine if this is the first visit or display the number of visits.
+// if (numVisits !== 0) {
+// 	visitsDisplay.textContent = numVisits;
+// } else {
+// 	visitsDisplay.textContent = `This is your first visit!`;
+// }
+//     // increment the number of visits.
+// numVisits++;
+//     // store the new number of visits value
+// localStorage.setItem("visits-ls", numVisits);
 // END NUMBER OF PAGE VISITS JS
