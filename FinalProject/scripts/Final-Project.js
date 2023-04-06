@@ -1,5 +1,5 @@
-//WEATHER APP
-select HTML elements in the document  
+//WEATHER API
+    // SELECT HTML ELEMENTS IN THE DOCUMENT
 const myTown = document.querySelector('#town')
 const myGraphic = document.querySelector('#graphic')
 const myDescription = document.querySelector('#description')
@@ -7,7 +7,6 @@ const myTemperature = document.querySelector('#temperature')
 
 const townName = "Rigby"
 const myKey = "595ac2cc14ab1d9e32e1f8e790eaf129"
-
 const myURL = `//api.openweathermap.org/data/2.5/weather?q=${townName}&appid=${myKey}&units=imperial`;
 
 fetch(myURL)
@@ -24,31 +23,34 @@ fetch(myURL)
     }
 //END OF WEATHER APP
 
-// GETDATES JS 
+
+//NUMBER OF PAGE VISTS JS
+    //INITIALIZE DISPLAY ELEMENTS
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
+
+    //GET THE STORED VALUE IN LOCALSTORAGE
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+    //DETERMINE IF THIS IS THE FIRST VISIT OR DISPLAY THE NUMBER OF VISITS.
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit!`;
+}
+    //INCREMENT THE NUMBER OF VISITS
+numVisits++;
+    //STORE THE NEW NUMBER OF VISITS VALUE
+localStorage.setItem("visits-ls", numVisits);
+
+// END NUMBER OF PAGE VISITS JS
+
+
+// GETDATES FOR FOOTER JS 
 const d = new Date();
 let year = d.getFullYear();
 document.getElementById("newDate").innerHTML = year;
 
 const date = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = date; 
-// END GETDATES JS 
-
-//NUMBER OF PAGE VISTS JS
-    // initialize display elements
-// const todayDisplay = document.querySelector(".today");
-// const visitsDisplay = document.querySelector(".visits");
-
-//     // get the stored value in localStorage
-// let numVisits = Number(window.localStorage.getItem("visits-ls"));
-
-//     // determine if this is the first visit or display the number of visits.
-// if (numVisits !== 0) {
-// 	visitsDisplay.textContent = numVisits;
-// } else {
-// 	visitsDisplay.textContent = `This is your first visit!`;
-// }
-//     // increment the number of visits.
-// numVisits++;
-//     // store the new number of visits value
-// localStorage.setItem("visits-ls", numVisits);
-// END NUMBER OF PAGE VISITS JS
+// END GETDATES FOR FOOTER JS 

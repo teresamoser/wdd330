@@ -29,11 +29,12 @@
     left: 0;
   }
 /* BACKGROUND IMAGE CSS ENDS */
+
+/* CSS FOR PLANETS API */
   html,body{
     height: 100%;
     width: 100%;
   }
-
   #container{
     margin: auto;
   }
@@ -47,18 +48,29 @@
   }
   #header-text{
     margin: 0 auto;
+    background:rgb(4, 4, 4);
+    color: white;
+    border-radius: 25px;
+    padding: 1rem; 
   }
   #generate-planet {
     margin: 0 auto;
+    background:rgb(4, 4, 4);
+    color: white;
+    border-radius: 25px;
+    padding: 1rem; 
+    font-size: large;
   }
   #delete-btn {
     position: absolute;
     left: 85%;
     display: none;
     margin-bottom: 5%;
+    font-size: large;
   }
+  /* END CSS FOR PLANETS API */
     
-  /* MAIN SECTIONS CSS */
+  /* SECTIONS CSS */
    section {
     color: black;;
     padding: 1rem;
@@ -84,7 +96,7 @@
     text-align: center;
     gap: 1.5rem;
     }
-  .card1, .card2, .card3, .card4 {
+  .card1, .card2 {
     color: black;;
     padding: 1rem;
     border-color:rgb(3, 3, 3);
@@ -98,66 +110,9 @@
     font-size: large;
     position: relative;
     } 
-
-    /* MAIN SECTIONS CSS END */
-
-/* SELECT A PLANET */
-
-/* The container must be positioned relative: */
-/* .custom-select {
-  position: relative;
-  font-family: 'Anonymous Pro';
-}
-.custom-select select {
-  display: none; /*hide original SELECT element: */
-/* }
-.select-selected {
-  background-color: rgb(38, 82, 114);
-}
-/* Style the arrow inside the select element: */
-/* .select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-} */ 
-/* Point the arrow upwards when the select box is open (active): */
-/* .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-} */
-/* style the items (options), including the selected item: */
-/* .select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-} */
-/* Style items (options): */
-/* .select-items {
-  position: absolute;
-  background-color: rgb(38, 82, 114);
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-} */
-/* Hide the items when the select box is closed: */
-/* .select-hide {
-  display: none;
-} */
-/* .select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-} */ 
-    
-/* END OF SELECT A PLANET */
+    /*SECTIONS CSS END */
  
-    /* WEATHER APP*/
+    /* WEATHER API*/
  .card {  
     color: rgb(250, 248, 248);
     padding: 1rem;
@@ -178,12 +133,10 @@
     border: 1px solid #070707;
     box-shadow: 0 0 15px #070707;
     } 
-    /* END WEATHER APP */
-
-/* end Main section */
+    /* END WEATHER API */
   
   /* VISITS PER PAGE */
-  /* p {
+  p {
     margin: 1rem;
     }
   .label {
@@ -194,34 +147,10 @@
     color: rgb(36, 72, 172);
     font-weight: 800;
     font-size: large;
-    } */
-  /* END VISITS PER PAGE */
-   
-  
-  /* Embedded map code */
-  /* .googlemap {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    min-width: 350px;
-    height: 350px;
-    padding: 1rem;
-    border-style: solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 25px;
-    gap: 1.5rem;
-    background:rgb(236, 225, 195);
-    grid-column: 1/3;
     }
-  .googlemap iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  } */
-  /* End of map code */
-   
+  /* END VISITS PER PAGE */
+
+ /* END MAIN SECTION */
   footer {
     color: white;
     padding: 1rem;
