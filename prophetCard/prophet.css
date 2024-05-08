@@ -10,9 +10,7 @@ body {
     font-family: fantasy;
   }
   
-  header,
-  main,
-  footer {
+  header, main, footer {
     margin: 1rem;
     position: relative;
     text-align: center;
@@ -29,15 +27,15 @@ body {
     margin: 1rem;
   }
   
-  main {
+main {
     margin-left: 1rem;
     box-shadow: 0 0 30px #777;
   }
   
   #cards {
-      display: grid;
+    display: grid;
     grid-gap: .5rem;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     padding: 1rem;  
   }
   
@@ -52,7 +50,7 @@ body {
     height: 250px;
   }
   
-  footer {
+footer {
     border-top: 1px solid #050505;
     padding: 20px;
     font-size: medium;
